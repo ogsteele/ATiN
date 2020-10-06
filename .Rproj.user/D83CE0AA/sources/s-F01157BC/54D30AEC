@@ -3,22 +3,22 @@
     "path": "~/Library/Mobile Documents/com~apple~CloudDocs/DPhil/G Drive/os239/Teaching/Advanced Techniques/Markdown/ATiN/Tutorial/Tutorial.Rmd",
     "project_path": "Tutorial/Tutorial.Rmd",
     "type": "r_markdown",
-    "hash": "762023955",
+    "hash": "3356600434",
     "contents": "",
     "dirty": false,
     "created": 1601978346145.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
-        "cursorPosition": "50,5",
-        "scrollLine": "42"
+        "cursorPosition": "339,4",
+        "scrollLine": "335"
     },
     "folds": "",
-    "lastKnownWriteTime": 1601978901,
+    "lastKnownWriteTime": 1601981472,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1601978901080,
+    "last_content_update": 1601981472260,
     "read_only": false,
     "read_only_alternatives": []
 }
