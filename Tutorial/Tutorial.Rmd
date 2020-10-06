@@ -93,6 +93,8 @@ quiz(
     answer("Low Mg, Low Na"),
     answer("High Mg, Low Na", correct = TRUE),
     answer("Low Mg, High Na")
+    #correct = "spot on, well done!",
+    #incorrect = "not quite!"
   )
 )
 ```
