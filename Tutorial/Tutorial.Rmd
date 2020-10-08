@@ -1,6 +1,6 @@
 ---
 title: "Advanced Techniques in Neuroscience"
-subtitle: "Separation and analysis of AMPA and NMDA receptor-mediated synaptic conductances"
+subtitle: "Patch clamp electrophysiology in brain slices"
 author: "Penn Lab"
 date: "04/11/2020"
 output: learnr::tutorial
@@ -8,10 +8,12 @@ runtime: shiny_prerendered
 ---
 
 ```{r setup, include=FALSE}
+# install devtools to install emoji package and learnr
+if (!base::require(package="devtools")) utils::install.packages("devtools")
+if (!base::require(package="devtools")) utils::install.packages("devtools")
+if (!base::require(package="emo")) devtools::install_github("hadley/emo")
+# attach libraries
 library(learnr)
-# emo::ji is a little funny with this latest version, so install dev version from github
-# install.packages("devtools")
-# devtools::install_github("hadley/emo")
 library(emo)
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -26,15 +28,15 @@ Throughout this worksheet you'll notice several symbols, make sure to pay attent
 
 | Symbol | Meaning | What should i do when seeing this? |  
 |:-----------------|:--------------------|:--------------------|  
-| `r emo::ji("thinking")` | Question |  Please answer and be prepared to feed back to the tutors through the session |  
-| `r emo::ji("exclamation")` | Task | Best to follow these instructions ... |  
-| `r emo::ji("angel")` | Tip | These little people are just here to help, they may make your life a bit easier! |  
+| <font size="7">  `r emo::ji("thinking")` </font> | Question |  Please answer and be prepared to feed back to the tutors through the session |  
+| <font size="7">  `r emo::ji("exclamation")` </font> | Task | Best to follow these instructions ... |  
+| <font size="7">  `r emo::ji("angel")` </font>` | Tip | These little people are just here to help, they may make your life a bit easier! |  
 
 Please enjoy the session, and make the most of it by asking any questions you have - we're happy to help.  
 
 <font size="4">  
 
-| `r emo::ji("thinking")` QUESTIONS FOR ANDY |
+| <font size="10">  `r emo::ji("thinking")` </font> QUESTIONS FOR ANDY |
 |:---------------------------|
 | What do you think about html alerts?       |  
 | |  
@@ -44,7 +46,7 @@ Please enjoy the session, and make the most of it by asking any questions you ha
 
 Alerts like this ...   
 
-<div class="alert alert-danger"> alert alert-danger </div>  
+<div class="alert alert-danger"> <font size="10">  `r emo::ji("thinking")` </font> alert alert-danger </div>  
 <div class="alert alert-warning"> alert alert-warning </div>  
 <div class="alert alert-info"> alert alert-info </div>  
 
@@ -77,7 +79,7 @@ Write methodology in here later ...
 </center>  
 
 
-| `r emo::ji("thinking")` ACUTE SLICING QUESTIONS |
+| <font size="7">  `r emo::ji("thinking")` </font> ACUTE SLICING QUESTIONS |
 |:---------------------------|
 
 ```{r questions}
@@ -115,7 +117,7 @@ Write methodology in here later ...
 </center>  
 
 
-| `r emo::ji("thinking")` ACUTE SLICING QUESTIONS |
+| <font size="7">  `r emo::ji("thinking")` </font> ACUTE SLICING QUESTIONS |
 |:---------------------------|
 
 ```{r questions-2}
@@ -161,7 +163,7 @@ Choose your channel and split settings. Only some data formats allow for multipl
 
 <font size="4">  
 
-| `r emo::ji("angel")` TIP |
+| <font size="7">  `r emo::ji("angel")` </font> TIP |
 |:---------------------------|
 | **Need to change the split length?** <br> *To do so, the file must be closed, the split length changed, and then the file loaded again*  |  
 | |  
@@ -183,7 +185,7 @@ Choose which data you wish to analyse. Multiple data sets can be analysed at onc
 
 <font size="4">  
 
-| `r emo::ji("exclamation")` TASK|
+| <font size="7">  `r emo::ji("exclamation")` </font> TASK|
 |:---------------------------|
 |**Please now load** `filepath\filename`|  
 | | 
@@ -201,12 +203,12 @@ Eventer includes a preview tab for immediate visualisation of your data upon loa
 
 <font size="4">  
 
-| `r emo::ji("angel")` TIP |
+| <font size="7"> `r emo::ji("angel")` </font> TIP |
 |:---------------------------|
 | *The synaptic events you are seeing are all excitatory, so by convention downwards at this holding potential, however the test pulse is still visible and very large. At this point, it's advisable to exclude these from your recordings. This can be done individually for every pulse you see, or you can split recording so that the event you're looking to exclude is at the beginning of each 'wave' at the same time. This will make it very easy to exclude them all with one click!* |  
 | |  
 
-| `r emo::ji("exclamation")` TASK |
+| <font size="7"> `r emo::ji("exclamation")` </font> TASK |
 |:---------------------------|
 | Please now close your recording, changing the split interval to the duration of the test pulse interval, then reload the file <br> You should now see the test pulse at the beginning of each wave |  
 | |  
@@ -223,7 +225,7 @@ It is possible that there are regions of your data that you want to be excluded 
 
 <font size="4">  
 
-| `r emo::ji("exclamation")` TASK |
+| <font size="7"> `r emo::ji("exclamation")` </font> TASK |
 |:---------------------------|
 | Exclude the test pulse from your current wave, and then apply this setting to all waves |  
 | |  
@@ -240,7 +242,7 @@ It is possible that excess noise is still present in your data that may not have
 
 <font size="4">  
 
-| `r emo::ji("exclamation")` TASK |
+| <font size="7">  `r emo::ji("exclamation")` </font> TASK |
 |:---------------------------|
 | Apply a 1 kHz low pass filter to your data |  
 | |  
@@ -258,7 +260,7 @@ It is worth locating an event in the ‘Pop-up Graph’ before defining the time
 
 <font size="4">  
 
-| `r emo::ji("exclamation")` TASK |
+| <font size="7"> `r emo::ji("exclamation")` </font> TASK |
 |:---------------------------|
 | Define your event template carefully, then apply the `Rise` and `Decay` fit paremeters of your template to all waves |  
 | |  
@@ -276,7 +278,7 @@ If you wish to use parallel processing which will speed up analysis on newer com
 
 <font size="4">  
 
-| `r emo::ji("angel")` TIP|
+| <font size="7"> `r emo::ji("angel")` </font> TIP|
 |:---------------------------|
 | Don't worry too much about this for your recordings as they're not too long! |  
 | |  
@@ -295,12 +297,12 @@ Changing the box on the right from ‘Current’ to ‘Batch’ will tell Evente
 
 <font size="4">  
 
-| `r emo::ji("thinking")` QUESTION |
+| <font size="7"> `r emo::ji("thinking")` </font> QUESTION |
 |:---------------------------|
 | Should you be in **Batch** or **Current** mode? |  
 | |  
 
-| `r emo::ji("exclamation")` TASK |
+| <font size="7"> `r emo::ji("exclamation")` </font> TASK |
 |:---------------------------|
 | Define your output folder as the name of your group and then run your analysis! |  
 | |  
@@ -328,7 +330,7 @@ When selecting whether an event is indeed actually an event, it is important tha
 
 <font size="4">  
 
-| `r emo::ji("exclamation")` TASK |
+| <font size="7"> `r emo::ji("exclamation")` </font> TASK |
 |:---------------------------|
 | Classify events as either true events or false positives |  
 | |  
@@ -346,7 +348,7 @@ To then use the trained model on subsequent analysis, the user can then deselect
 
 <font size="4">  
 
-| `r emo::ji("exclamation")` TASK |
+| <font size="7"> `r emo::ji("exclamation")` </font> TASK |
 |:---------------------------|
 | Please now load the model named `model`, stored at `filepath\model` and run your analysis using this model |  
 | |  
@@ -358,7 +360,7 @@ To then use the trained model on subsequent analysis, the user can then deselect
 
 ## 4. Stimfit
 
-| `r emo::ji("exclamation")` TODO FOR OLI |
+| <font size="7"> `r emo::ji("exclamation")` </font> TODO FOR OLI |
 |:---------------------------|
 | Format for Markdown     |  
 
