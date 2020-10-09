@@ -176,7 +176,7 @@ quiz(
 
 | Reagent |	mM	| mw |	g/500 ml |  
 | :--- | :--- | :--- | :--- |  
-| NaCl | 75 | 8.44	| 2.19 |	   
+| NaCl | 125 | 8.44	| 3.65 |	   
 | D-Glucose	| 10	| 180.16	| 0.90 | 	  
 | NaHCO$_{3}$	| 25	| 84.01	| 1.05 |  
 | KCl	| 2.5	| 74.55	| 0.09 |	  
@@ -195,7 +195,25 @@ Adjust osmolarity to 305 $\pm$ 10 mOsm  before warming to 30$^o$C $\pm$ 2$^o$C
 Allow intracellular solution to thaw on ice. Osmolarity should be 295 $\pm$ 10 mOsm  
 
 
-**2. Prepare rig**
+**2. Prepare rig**  
+Ensure amplifier, NiDaQ, SliceScope and inline heater are all switched on  
+Pull glass pipettes with a tip diamter between 1-3 M$\Omega$  
+Ensure solution perfusing through the bath evenly and the ground electrode is submerged  
+Submerge slice in bath solution and leave for 10 minutes for sucrose to wash off  
+
+**3. Patching**  
+Locate healthy cell (proud, defined edges, smooth surface)  
+Apply ~65 mbar pressure before entering solution and navigate the electrode towards the slice  
+Approach cell until dimple forms on surface of neuron  
+Quickly release pressure and allow resistance to increase until a G$\Omega$ seal is formed  
+Clamp the cell to -65 mV and compensate for fast and slow capacitance  
+Break the cell membrane by applying small amounts of negative pressure and apply the 'zap' button too  
+Ensure access resistance is below 20 M$\Omega$ (applying negative pressure if necessary) and resting current is stable  
+Allow the Cs based intracellular solution a couple of minutes to equilibriate with the internal solution within the neuron  
+Adjust gain, filter and sampling frequency as appropriate  
+*In these recordings (Gain = 100, Filter = 2 kHz low pass, Sampling = 20 kHz)*  
+Record! 
+
 
 **Video Protocol**  
 ![](https://www.youtube.com/watch?v=gaRo8SijUtg&t=34s)
