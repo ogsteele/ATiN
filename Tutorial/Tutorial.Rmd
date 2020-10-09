@@ -5,6 +5,7 @@ author: "Penn Lab"
 date: "04/11/2020"
 output: learnr::tutorial
 runtime: shiny_prerendered
+# As far as i can tell css styling is the best option to play around with YAML header styling, but i'm not convinced this is really worth our time at this point. I thought i saw someone apply html styling, but i couldn't get that to work so that may be an alternative if you can get that to work - i didn't try too hard. 
 ---
 
 ```{r setup, include=FALSE}
@@ -65,24 +66,83 @@ Alerts like this ...
 
 ## 1. Slicing
 
-### Acute Brain Slicing Procedure
+| <font size="10">  `r emo::ji("exclamation")` </font> TODO FOR ANDY |
+|:---------------------------|
+| Video of slice procedure inserted here      |  
+| Any introduction to this page | 
+| Update questions for this section | 
+| |   
 
-**Methodology**  
+### Protocol 
 
-Write methodology in here later ...
+**1. Sucrose based cutting and storage solution**  
+
+| Reagent |	mM	| mw |	g/500 ml |  
+| :--- | :--- | :--- | :--- |  
+| NaCl | 75 | 8.44	| 2.19 |	   
+| Sucrose	| 75 |	342.3	| 12.83	|   
+| D-Glucose	| 10	| 180.16	| 0.90 | 	  
+| NaHCO$_{3}$	| 25	| 84.01	| 1.05 |  
+| KCl	| 2.5	| 74.55	| 0.09 |	  
+| NaH$_{2}$PO$_{4}$	| 1.25	| 119.98 |	0.07 | 	  
+| C$_{3}$H$_{3}$NaO$_{3}$ |	3	| 110.04	| 0.17 |   
+
+Add 250 $\mu$l 1M CaCl$_{2}$ to 500 ml to create final concentration of 0.5 mM  
+Add 3,500 $\mu$l 1M MgCl$_{2}$ to 500 ml to create final concentration of 7 mM  
+Adjust osmolarity to 305 $\pm$ 10 mOsm  
+Cool 200 ml to ~ ice temperature (~ 4$^o$C) and oxygenate with 95 % O$_{2}$ / 5 % CO$_{2}$   
+Warm 250 ml in slice storage chamber to 37 $^o$C $\pm$ 2$^o$C and oxygenate with 95 % O$_{2}$ / 5 % CO$_{2}$  
+
+**2. Prepare dissection room and vibratome**  
+Place dissection tools on ice (large and small scissors, scalpel, spatula, spoon and petri dishes)  
+Perform vibro-check on ceramic blade to minimise vertical vibrations  
+Adjust vibratome settings to the following: 
+
+  * Slice thickness = 250 $\mu$m
+  * Amplitude = 1 mm
+  * Approach speed = 0.09 mm/s$^-1$
+
+Cool slicing plate and chamber in freezer for 20-30 minutes.  
+
+**3. Culling and dissection**  
+Cull mice via cervical dislocation and confirm death via exsanguination  
+Remove skin from rostral to caudal with surgical scalpel  
+Make two small cuts at the base of the cranium before cutting the cranium from caudal to rostral in one delicate cut.   
+Remove the cranium with forceps. Two small cuts near the olfactory bulbs may help facilitate this process.  
+Remove hemisphere from the skull and place into ice cold physiological saline   
+The above process should take < ~ 1 minute and involve minimal damage to the brain.  
+Allow to cool for ~ 1 minute in the ice-cold sucrose, be careful to ensure the bubbles don’t agitate the brain    
+
+**4. Slicing**  
+Whilst cooling retrieve the slicing apparatus (plate and chamber) from the freezer and attach to the vibratome  
+Wipe the plate dry and apply cyanoacrylate glue  
+Place medial surface on sucrose soaked filter paper and remove the cerebellum  
+Hemi-sect the brain, then perform the ‘magic cut’, removing 10-20% of brain matter from the dorsal surface  
+Place onto the cyanoacrylate glued surface so the ‘magic cut’ surface comes into contact with the glue and the ventral surface is up  
+Apply a few drops of ice cold sucrose to the hemisphere now to prevent glue riding up  
+Place the stage into the vibratome and fill quickly with sucrose, ensuring the solution is still bubbling  
+Prepare slices from the brain with the blade at an approach angle of ~ 18%^o%  
+Transfer slices to the storage chamber upside-down if possible as the integrity of the superficial surface is better  
+From the last slice, start a timer for 30 minutes recovery time before maintenance at room temperature (ensure depth of recovery is shallow)  
+Good slices appear to have a peanut shaped hippocampus and clear striation in the CP  
+
+<center>
+![](images/magic.png){width=100%}  
+<br> **Figure 1** *'Magic' slice angle*
+</center>
 
 **Video Protocol**  
 ![](https://www.youtube.com/watch?v=gaRo8SijUtg&t=34s)
 
 <center>
-**Figure 1** *Video of acute brain slicing*
+**Figure 2** *Video of acute brain slicing*
 </center>  
-
 
 | <font size="7">  `r emo::ji("thinking")` </font> ACUTE SLICING QUESTIONS |
 |:---------------------------|
 
 ```{r questions}
+# Include correct and incorrect statements to aid students understanding as necessary. 
 quiz(
   question("What is the benefit of the cutting solution being ice-cold?",
     answer("Strengthen the cell membranes of the neurons"),
@@ -103,17 +163,45 @@ quiz(
 
 ## 2. Recording
 
-### Acute Brain Slicing Procedure
+| <font size="10">  `r emo::ji("exclamation")` </font> TODO FOR ANDY |
+|:---------------------------|
+| Video of recording procedure inserted here      |  
+| Any introduction to this page | 
+| Update questions for this section | 
+| |   
 
-**Methodology**  
+### Protocol
 
-Write methodology in here later ...
+**1. Artificial cerebrospinal fluid recording solution & intracellular solution prep**  
+
+| Reagent |	mM	| mw |	g/500 ml |  
+| :--- | :--- | :--- | :--- |  
+| NaCl | 75 | 8.44	| 2.19 |	   
+| D-Glucose	| 10	| 180.16	| 0.90 | 	  
+| NaHCO$_{3}$	| 25	| 84.01	| 1.05 |  
+| KCl	| 2.5	| 74.55	| 0.09 |	  
+| NaH$_{2}$PO$_{4}$	| 1.25	| 119.98 |	0.07 | 	  
+| C$_{3}$H$_{3}$NaO$_{3}$ |	1	| 110.04	| 0.06 |   
+
+Oxygenate with 95 % O$_{2}$ / 5 % CO$_{2}$  
+<br>
+Add 250 $\mu$l 1M CaCl$_{2}$ to 50 ml to create final concentration of 5 mM  
+Add 1 $\mu$l 1M MgCl$_{2}$ to 50 ml to create final concentration of 0.02 mM  
+Add 25 $\mu$l 1 mM TTX to 50 ml to create final concentration of 500 nM  
+Add 250 $\mu$l 5 mM PTX to 50 ml to create final concentration of 25 $\mu$M  
+Add 50 $\mu$l 10 mM CGP to 50 ml to create final concentration of 10 $\mu$M  
+<br>
+Adjust osmolarity to 305 $\pm$ 10 mOsm  before warming to 30$^o$C $\pm$ 2$^o$C  
+Allow intracellular solution to thaw on ice. Osmolarity should be 295 $\pm$ 10 mOsm  
+
+
+**2. Prepare rig**
 
 **Video Protocol**  
 ![](https://www.youtube.com/watch?v=gaRo8SijUtg&t=34s)
 
 <center>
-**Figure 1** *Video of acute brain slicing*
+**Figure 3** *Video of whole cell patch clamp from brain slices*
 </center>  
 
 
@@ -139,15 +227,16 @@ quiz(
 
 ## 3. Eventer
 
+| <font size="10">  `r emo::ji("exclamation")` </font> TODO FOR ANDY |
+|:---------------------------|
+| Check instructions here make sense      |  
+| Include questions for this section as per the previous two sections | 
+| |   
+
 <div align="justify">
 
-In the section we will be analysing some of the data we generated during the experiment seen previously. Synaptic events are particularly small, and can frustratingly look quite similar to the background noise. For this reason we use a software, built in house, called Eventer that dramatically improves the speed and reproducibility of this analysis. Some quick experimental parameters that will help to understand the data you're analysing is shown below;  
+In the section we will be analysing some of the data we generated during the experiment seen previously. Synaptic events are particularly small, and can frustratingly look quite similar to the background noise. For this reason we use a software, built in house, called Eventer that dramatically improves the speed and reproducibility of this analysis. Feel free to refresh yourself with some of the protocol in the previous section to remind yourself what type of events these are and why. 
 
-* Acute brain slices from 3m old wild type mice
-* Whole cell patch clamp in the CA1 stratum pyrimadale 
-* Miniature excitatory post synaptic currents clamped at -65 mV
-  * TTX, PTX & GCP present throughout (blocking NaV, GABAa & GABAb)
-* Test pulse every 30 seconds
 
 ### Preload settings  
 Choose your channel and split settings. Only some data formats allow for multiple recording channels, so unless you need to, the channel feature can be left at 1. Split should only be used if your data varies in length or if you want to split a continuous recording wave into smaller chunks for parallel processing.
@@ -155,7 +244,7 @@ Choose your channel and split settings. Only some data formats allow for multipl
 <center>
 ![](images/Screenshot 2020-08-18 at 16.09.13.png){width=100%}  
   <br>
-**Figure 1** *Pre-load settings in Eventer*
+**Figure 4** *Pre-load settings in Eventer*
 </center>
 
 <br>
@@ -177,7 +266,7 @@ Choose which data you wish to analyse. Multiple data sets can be analysed at onc
 <center>
 ![](images/Screenshot 2020-08-18 at 16.09.18.png){width=100%}    
   <br>
-**Figure 2** *Loading your data in Eventer*
+**Figure 5** *Loading your data in Eventer*
 </center>
 
 <br>
@@ -198,7 +287,7 @@ Eventer includes a preview tab for immediate visualisation of your data upon loa
 <center>
 ![](images/Screenshot 2020-08-18 at 16.09.23.png){width=100%}  
   <br>
-**Figure 3** *Visualising your data in Eventer*
+**Figure 6** *Visualising your data in Eventer*
 </center>
 
 <font size="4">  
@@ -220,7 +309,7 @@ It is possible that there are regions of your data that you want to be excluded 
 
 <center>
 ![](images/Screenshot 2020-08-18 at 16.09.40.png){width=100%}  
-**Figure 4** *Excluding regions from your analysis in Eventer*
+**Figure 7** *Excluding regions from your analysis in Eventer*
 </center>  
 
 <font size="4">  
@@ -237,7 +326,7 @@ It is possible that excess noise is still present in your data that may not have
 
 <center>
 ![](images/Screenshot 2020-08-18 at 16.09.30.png){width=100%}  
-**Figure 5** *Pre-filtering your data in Eventer*
+**Figure 8** *Pre-filtering your data in Eventer*
 </center>
 
 <font size="4">  
@@ -255,7 +344,7 @@ It is worth locating an event in the ‘Pop-up Graph’ before defining the time
 
 <center>
 ![](images/Screenshot 2020-08-18 at 16.09.35.png){width=100%}  
-**Figure 6** *Defining your event template in Eventer*
+**Figure 9** *Defining your event template in Eventer*
 </center>
 
 <font size="4">  
@@ -273,7 +362,7 @@ If you wish to use parallel processing which will speed up analysis on newer com
 
 <center>
 ![](images/Screenshot 2020-08-18 at 16.09.45.png){width=100%}  
-**Figure 7** *Enabling parrellel processing in Eventer*
+**Figure 10** *Enabling parrellel processing in Eventer*
 </center>
 
 <font size="4">  
@@ -291,7 +380,7 @@ Changing the box on the right from ‘Current’ to ‘Batch’ will tell Evente
 
 <center>
 ![](images/Screenshot 2020-08-18 at 16.09.50.png){width=100%}  
-**Figure 8** *Running your analysis in Eventer*
+**Figure 11** *Running your analysis in Eventer*
 </center>
 
 
@@ -315,7 +404,7 @@ After running the analysis, Eventer will open multiple figures. A quick summary 
 
 <center>
 ![](images/Screenshot 2020-08-18 at 16.09.55.png){width=100%}  
-**Figure 9** *Accessing your results in Eventer*
+**Figure 12** *Accessing your results in Eventer*
 </center>
 
 ### Training a machine learning model
@@ -324,7 +413,7 @@ When selecting whether an event is indeed actually an event, it is important tha
 
 <center>
 ![](images/Screenshot 2020-08-18 at 16.10.00.png){width=850}   
-**Figure 10** *Training a machine learning model in Eventer*
+**Figure 13** *Training a machine learning model in Eventer*
 </center>
 
 
@@ -342,7 +431,7 @@ To then use the trained model on subsequent analysis, the user can then deselect
 
 <center>
 ![](images/Screenshot 2020-08-18 at 16.10.05.png){width=100%}   
-**Figure 11** *Using your machine learning model in Eventer*
+**Figure 14** *Using your machine learning model in Eventer*
 </center>
 
 
@@ -360,9 +449,13 @@ To then use the trained model on subsequent analysis, the user can then deselect
 
 ## 4. Stimfit
 
-| <font size="7"> `r emo::ji("exclamation")` </font> TODO FOR OLI |
+| <font size="10">  `r emo::ji("exclamation")` </font> TODO FOR ANDY |
 |:---------------------------|
-| Format for Markdown     |  
+| Format properly for markdown, i made a start so it was readable      |  
+| Any introduction to this page | 
+| Include questions for this page | 
+| Update instructions so relevent for this session  |     
+| |  
 
 Advanced Techniques in Neuroscience
 Separation and analysis of AMPA and NMDA receptor-mediated synaptic conductances 

@@ -1,0 +1,25 @@
+Filename: Data
+Channel: 1
+Wave number: 1
+Wave name: YWave004
+Total number of events detected: 18
+Duration of recording analysed (in s): 29.5
+Mean event amplitude (pA): 9.61
+Event frequency (in Hz): 0.61
+High-pass filter cut-off on deconvoluted wave (at -3 dB, in Hz): 1
+Low-pass filter cut-off on deconvoluted wave (at -3 dB, in Hz): 200
+Vector of model template time constants (in ms): [0.8,9.8]
+Standard deviation of the noise of the deconvoluted wave (a.u.): 3.58e-14
+Scale factor of noise standard deviations for threshold setting: 4
+Theoretical false positive detection rate before applying event criterion (in Hz): 0.633
+Sign of the event peaks: -
+Criterion used for event screening: Machine Learning
+Maximum time after peak (expressed in time constants) used for template fit: 2
+Dead time from event start required for template fit (ms): 2.18
+Minimum acceptable correlation coefficient for the template fit: -1
+Episodic data window limits centred around each event: [-0.01,0.04]
+Sample rate of the recording (in kHz): 20
+lsqfit exitflag for fitting the noise peak: 2
+Exclusion zones:
+1.227006	1.641752
+29.921900	30.000000
