@@ -11,7 +11,6 @@ runtime: shiny_prerendered
 ```{r setup, include=FALSE}
 # install devtools to install emoji package and learnr
 if (!base::require(package="devtools")) utils::install.packages("devtools")
-if (!base::require(package="devtools")) utils::install.packages("devtools")
 if (!base::require(package="emo")) devtools::install_github("hadley/emo")
 # attach libraries
 library(learnr)
