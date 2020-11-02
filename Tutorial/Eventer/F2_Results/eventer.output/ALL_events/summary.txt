@@ -1,0 +1,11 @@
+Number of waves analysed: 4
+Total recording time analysed (in s): 30.0
+Total number of events: 82
+Event frequency (in Hz): 2.74
+Ensemble average: median
+Amplitude of the model PSC fit (pA): 34.8
+Integral (charge) of the model PSC fit (fC): 164.5
+Rise time constant of the model PSC fit (ms): 0.358
+Decay time constant of the model PSC fit (ms): 3.68
+lsqfit exitflag for fitting the ensemble average event: 2
+Standard deviation of the noise of the deconvoluted waves (a.u.): 1.14e-13
